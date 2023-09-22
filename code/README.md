@@ -1,6 +1,8 @@
 <!--
  * @Author: hfxie
  * @Date: 2023-04-12 10:08:58
+ * @LastEditors: hfxie
+ * @LastEditTime: 2023-09-14 14:50:49
  * @LastEditors: haifeng_xie haifeng_xie@kingdee.com
  * @LastEditTime: 2023-09-22 12:18:54
  * @Description: 指引
@@ -54,6 +56,56 @@ chore：构建过程或辅助工具的变动
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 目录规范
 规范自定义控件目录如下：
 ```
@@ -104,4 +156,6 @@ mmc_demo/                               // 自定义控件名目录
 ├── index.js.map                      // 打包后·开启源码分析sourceMap定位文件
 
 ```
+
+
 
