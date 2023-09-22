@@ -2,7 +2,7 @@
  * @Author: hfxie
  * @Date: 2023-09-12 16:13:20
  * @LastEditors: haifeng_xie haifeng_xie@kingdee.com
- * @LastEditTime: 2023-09-12 14:30:45
+ * @LastEditTime: 2023-09-22 09:39:04
  * @Description: 项目工程入口
  */
 import Vue from "vue";
@@ -32,6 +32,12 @@ import * as utils from "@/utils/ganttUnit.js";
 Vue.prototype.$utils = utils;
 import chaining from "@/utils/chaining";
 Vue.use(chaining);
+// 无限滚动
+import infiniteScroll from "vue-infinite-scroll";
+Vue.use(infiniteScroll);
+// 右菜单
+import Contextmenu from "vue-contextmenujs";
+Vue.use(Contextmenu);
 // 懒加载图片
 import VueLazyload from "vue-lazyload";
 const errorimage = require("./assets/images/avatar_error.png");
