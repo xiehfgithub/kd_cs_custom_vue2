@@ -1,8 +1,8 @@
 <!--
  * @Author: hfxie
  * @Date: 2023-04-12 10:08:58
- * @LastEditors: hfxie
- * @LastEditTime: 2023-09-14 14:50:49
+ * @LastEditors: haifeng_xie haifeng_xie@kingdee.com
+ * @LastEditTime: 2024-07-31 10:06:17
  * @LastEditors: haifeng_xie haifeng_xie@kingdee.com
  * @LastEditTime: 2023-09-22 12:18:54
  * @Description: 指引
@@ -56,54 +56,11 @@ chore：构建过程或辅助工具的变动
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 新建模板文件夹使用
+  先修改createTemplate.js中 「parentFolder」参数值（src/components/xxx下属的主组件目录下）
+  运行命令或者开发编辑器NPM脚本 node createTemplate.js
+  输入新建组件名称（请确保同目录下无重复文件名称）
+  回车确认等待是生成即可
 
 
 ### 目录规范
@@ -120,7 +77,10 @@ mmc_demo/                               // 自定义控件名目录
 |   |    |    ├── images /              // 图片资源
 |   |    |    ├── less/                 // 样式文件资源
 |   |    |    └── ..../                 // 更多
-|   |    ├── components/                // vue组件
+|   |    ├── components/                // vue组件 
+|   |    |    └── TemplateComponent/    // createTemplate脚本模板组件目录
+|   |    |        └── TemplateComponent/TemplateComponent.vue           // createTemplate脚本模板组件·模板
+|   |    |        └── TemplateComponent/TemplateComponent.less           // createTemplate脚本模板组件·样式
 |   |    |    └── Xxx/Xxx.vue           // 参照基本的组件规范·大驼峰命名
 |   |    |    └── ..../                 // 更多
 |   |    ├── global/                    // 全局引入资源目录
@@ -143,6 +103,7 @@ mmc_demo/                               // 自定义控件名目录
 |   └── .eslintrc.js                    // 配置文件·elint具体规则
 |   └── .gitignore                      // 配置文件·git提交忽略文件规则
 |   └── babel.config.js                 // 配置文件·babel配置规则
+|   └── createTemplate.js               // 脚本文件·新增组件文件夹脚本
 |   └── editorconfig                    // 配置文件·编辑器规则
 |   └── package-lock.json               // 配置文件·锁定npm形式安装模块的版本
 |   └── package.json                    // 配置文件·安装依赖及控件版本配置
